@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyond the Map | Arab Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-logo">✈ Beyond the Map</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="arab.html" class="active">Arab Destinations</a>
+      <a href="international.html">International</a>
+      <a href="guide.html">Get Your Guide</a>
+    </div>
+  </nav>
+
+  <!-- ===== Countries View ===== -->
+  <div id="countries-view" class="section active">
+    <div class="page-header">
+      <h1>Discover the Arab World 🌍</h1>
+      <p>From the futuristic skylines of the Gulf to the historic medinas of North Africa</p>
+    </div>
+
+    <div class="container">
+      <div class="countries-grid">
+
+        <div class="country-card">
+          <div class="card-header"><h3>Saudi Arabia</h3><span class="badge">Gulf</span></div>
+          <div class="card-image" style="background-image: url('ksa.jpeg');">
+            <span class="card-badge">🇸🇦</span><h2>Saudi Arabia</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('ksa')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Yemen</h3><span class="badge">Arabia</span></div>
+          <div class="card-image" style="background-image: url('yemen.jpeg');">
+            <span class="card-badge">🇾🇪</span><h2>Yemen</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('yemen')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Egypt</h3><span class="badge">North Africa</span></div>
+          <div class="card-image" style="background-image: url('egypt.jpeg');">
+            <span class="card-badge">🇪🇬</span><h2>Egypt</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('egypt')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Sudan</h3><span class="badge">Africa</span></div>
+          <div class="card-image" style="background-image: url('sudan.jpeg');">
+            <span class="card-badge">SD</span><h2>Sudan</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('sudan')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Morocco</h3><span class="badge">North Africa</span></div>
+          <div class="card-image" style="background-image: url('morocco.jpeg');">
+            <span class="card-badge">🇲🇦</span><h2>Morocco</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('morocco')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Jordan</h3><span class="badge">Levant</span></div>
+          <div class="card-image" style="background-image: url('jordan.jpeg');">
+            <span class="card-badge">🇯🇴</span><h2>Jordan</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('jordan')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Oman</h3><span class="badge">Gulf</span></div>
+          <div class="card-image" style="background-image: url('oman.jpeg');">
+            <span class="card-badge">🇴🇲</span><h2>Oman</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('oman')">Explore Cities</button>
+        </div>
+
+        <div class="country-card">
+          <div class="card-header"><h3>Qatar</h3><span class="badge">Gulf</span></div>
+          <div class="card-image" style="background-image: url('qatar.jpeg');">
+            <span class="card-badge">🇶🇦</span><h2>Qatar</h2>
+          </div>
+          <button class="card-btn" onclick="showCountry('qatar')">Explore Cities</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Saudi Arabia Section ===== -->
+  <div id="section-ksa" class="section">
+    <div class="country-header">
+      <h2>🇸🇦 Explore Saudi Arabia</h2>
+      <p>From the ancient rock-cut tombs of AlUla to the misty mountains of Abha</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>AlUla</h3><span class="badge">Ancient</span></div>
+          <div class="card-image" style="background-image: url('alula.jpg');">
+            <span class="card-badge">UNESCO</span>
+            <h2>AlUla</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-alula')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Abha</h3><span class="badge">Nature</span></div>
+          <div class="card-image" style="background-image: url('abha.jpg');">
+            <span class="card-badge">Green Mountains</span>
+            <h2>Abha</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-abha')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Jeddah</h3><span class="badge">Coastal</span></div>
+          <div class="card-image" style="background-image: url('jeddah.jpg');">
+            <span class="card-badge">Historic</span>
+            <h2>Jeddah</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-jeddah')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Riyadh</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('riyadh.jpg');">
+            <span class="card-badge">Modern</span>
+            <h2>Riyadh</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-riyadh')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Diriyah</h3><span class="badge">Heritage</span></div>
+          <div class="card-image" style="background-image: url('diriyah.jpg');">
+            <span class="card-badge">Birthplace</span>
+            <h2>Diriyah</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-diriyah')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Yemen Section ===== -->
+  <div id="section-yemen" class="section">
+    <div class="country-header">
+      <h2>🇾🇪 Explore Yemen</h2>
+      <p>From the alien landscapes of Socotra to the ancient skyscrapers of Shibam</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Socotra Island</h3><span class="badge">Island</span></div>
+          <div class="card-image" style="background-image: url('socotra.jpg');">
+            <span class="card-badge">UNESCO</span>
+            <h2>Socotra</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-socotra')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Old Sana&#x27;a</h3><span class="badge">Historical</span></div>
+          <div class="card-image" style="background-image: url('sanaa.jpg');">
+            <span class="card-badge">Gingerbread Towers</span>
+            <h2>Sana&#x27;a</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-sanaa')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Shibam Hadramaut</h3><span class="badge">Ancient</span></div>
+          <div class="card-image" style="background-image: url('shibam.jpg');">
+            <span class="card-badge">Manhattan of Desert</span>
+            <h2>Shibam</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-shibam')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Ibb</h3><span class="badge">Nature</span></div>
+          <div class="card-image" style="background-image: url('ibb.jpg');">
+            <span class="card-badge">Green Mountain</span>
+            <h2>Ibb</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-ibb')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Aden</h3><span class="badge">Coastal</span></div>
+          <div class="card-image" style="background-image: url('aden.jpg');">
+            <span class="card-badge">Port City</span>
+            <h2>Aden</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-aden')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Egypt Section ===== -->
+  <div id="section-egypt" class="section">
+    <div class="country-header">
+      <h2>🇪🇬 Explore Egypt</h2>
+      <p>From ancient pharaonic wonders to the crystal-clear waters of the Red Sea</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Cairo &amp; Giza</h3><span class="badge">Historical</span></div>
+          <div class="card-image" style="background-image: url('Image.jpeg');">
+            <span class="card-badge">Must Visit</span>
+            <h2>Cairo</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-cairo')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Luxor</h3><span class="badge">Ancient City</span></div>
+          <div class="card-image" style="background-image: url('luxor.jpeg');">
+            <span class="card-badge">Open Museum</span>
+            <h2>Luxor</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-luxor')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Aswan</h3><span class="badge">Nile Jewel</span></div>
+          <div class="card-image" style="background-image: url('aswan.jpeg');">
+            <span class="card-badge">Peaceful</span>
+            <h2>Aswan</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-aswan')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Alexandria</h3><span class="badge">Coastal</span></div>
+          <div class="card-image" style="background-image: url('alex1.jpeg');">
+            <span class="card-badge">Mediterranean</span>
+            <h2>Alexandria</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-alexandria')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>New Alamein</h3><span class="badge">Beach &amp; Resort</span></div>
+          <div class="card-image" style="background-image: url('new%20al.jpeg');">
+            <span class="card-badge">Mediterranean</span>
+            <h2>New Alamein</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-newalamein')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>El Gouna</h3><span class="badge">Luxury Resort</span></div>
+          <div class="card-image" style="background-image: url('elgouna.jpeg');">
+            <span class="card-badge">Family Friendly</span>
+            <h2>El Gouna</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-elgouna')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Dahab</h3><span class="badge">Adventure</span></div>
+          <div class="card-image" style="background-image: url('dahab.jpeg');">
+            <span class="card-badge">Blue Hole</span>
+            <h2>Dahab</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-dahab')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Siwa Oasis</h3><span class="badge">Desert</span></div>
+          <div class="card-image" style="background-image: url('siwa.jpeg');">
+            <span class="card-badge">Unique Nature</span>
+            <h2>Siwa Oasis</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-siwa')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Khan El Khalili &amp; Al-Muizz</h3><span class="badge">Historical</span></div>
+          <div class="card-image" style="background-image: url('khan.jpeg');">
+            <span class="card-badge">Vibrant Streets</span>
+            <h2>Old Cairo</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-khan')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Egyptian Countryside</h3><span class="badge">Nature</span></div>
+          <div class="card-image" style="background-image: url('reef.jpeg');">
+            <span class="card-badge">True Soul</span>
+            <h2>Countryside</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-countryside')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Sudan Section ===== -->
+  <div id="section-sudan" class="section">
+    <div class="country-header">
+      <h2>🇸🇩 Explore Sudan</h2>
+      <p>From the ancient Nubian pyramids to the pristine waters of the Red Sea</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Khartoum</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('khartoum.jpg');">
+            <span class="card-badge">The Confluence</span>
+            <h2>Khartoum</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-khartoum')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Meroe</h3><span class="badge">Ancient</span></div>
+          <div class="card-image" style="background-image: url('merowe.jpg');">
+            <span class="card-badge">Nubian Pyramids</span>
+            <h2>Meroe</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-meroe')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Port Sudan</h3><span class="badge">Coastal</span></div>
+          <div class="card-image" style="background-image: url('portsudan.jpg');">
+            <span class="card-badge">Red Sea</span>
+            <h2>Port Sudan</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-portsudan')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Kassala</h3><span class="badge">Eastern Gem</span></div>
+          <div class="card-image" style="background-image: url('kassala.jpg');">
+            <span class="card-badge">Taka Mountains</span>
+            <h2>Kassala</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-kassala')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Dongola</h3><span class="badge">Heritage</span></div>
+          <div class="card-image" style="background-image: url('dongola.jpg');">
+            <span class="card-badge">Nubian History</span>
+            <h2>Dongola</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-dongola')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Morocco Section ===== -->
+  <div id="section-morocco" class="section">
+    <div class="country-header">
+      <h2>🇲🇦 Explore Morocco</h2>
+      <p>From the blue streets of Chefchaouen to the vibrant souks of Marrakech</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Marrakech</h3><span class="badge">Red City</span></div>
+          <div class="card-image" style="background-image: url('marrakech.jpg');">
+            <span class="card-badge">Vibrant</span>
+            <h2>Marrakech</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-marrakech')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Chefchaouen</h3><span class="badge">Blue Pearl</span></div>
+          <div class="card-image" style="background-image: url('Chefchaouen.jpg');">
+            <span class="card-badge">Picturesque</span>
+            <h2>Chefchaouen</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-chefchaouen')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Fes</h3><span class="badge">Spiritual</span></div>
+          <div class="card-image" style="background-image: url('Fes.jpg');">
+            <span class="card-badge">Ancient Medina</span>
+            <h2>Fes</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-fes')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Rabat</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('rabat.jpg');">
+            <span class="card-badge">Elegant</span>
+            <h2>Rabat</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-rabat')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Casablanca</h3><span class="badge">Modern</span></div>
+          <div class="card-image" style="background-image: url('casablanca.jpg');">
+            <span class="card-badge">Atlantic Coast</span>
+            <h2>Casablanca</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-casablanca')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Jordan Section ===== -->
+  <div id="section-jordan" class="section">
+    <div class="country-header">
+      <h2>🇯🇴 Explore Jordan</h2>
+      <p>From the rose-red city to the deepest point on Earth</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Amman</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('amman.jpg');">
+            <span class="card-badge">Modern &amp; Ancient</span>
+            <h2>Amman</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-amman')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Petra</h3><span class="badge">Wonder</span></div>
+          <div class="card-image" style="background-image: url('petra.jpg');">
+            <span class="card-badge">UNESCO</span>
+            <h2>Petra</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-petra')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Dead Sea</h3><span class="badge">Unique</span></div>
+          <div class="card-image" style="background-image: url('deadsea.jpg');">
+            <span class="card-badge">Lowest Point</span>
+            <h2>Dead Sea</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-deadsea')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Jerash</h3><span class="badge">Roman</span></div>
+          <div class="card-image" style="background-image: url('jerash.jpg');">
+            <span class="card-badge">City of Columns</span>
+            <h2>Jerash</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-jerash')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Ajloun</h3><span class="badge">Nature</span></div>
+          <div class="card-image" style="background-image: url('ajloun.jpg');">
+            <span class="card-badge">Green Hills</span>
+            <h2>Ajloun</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-ajloun')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Wadi Rum</h3><span class="badge">Desert</span></div>
+          <div class="card-image" style="background-image: url('Wadi\ Rum.jpg');">
+            <span class="card-badge">Mars-like</span>
+            <h2>Wadi Rum</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-wadirum')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Salt</h3><span class="badge">Heritage</span></div>
+          <div class="card-image" style="background-image: url('salt.jpg');">
+            <span class="card-badge">City of Kings</span>
+            <h2>Salt</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-salt')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Oman Section ===== -->
+  <div id="section-oman" class="section">
+    <div class="country-header">
+      <h2>🇴🇲 Explore Oman</h2>
+      <p>From the turquoise fjords of Musandam to the frankincense-scented air of Salalah</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Muscat</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('muscat.jpg');">
+            <span class="card-badge">Coastal Gem</span>
+            <h2>Muscat</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-muscat')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Rustaq</h3><span class="badge">Historic</span></div>
+          <div class="card-image" style="background-image: url('rustaq.jpg');">
+            <span class="card-badge">Fort &amp; Springs</span>
+            <h2>Rustaq</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-rustaq')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Salalah</h3><span class="badge">Khareef</span></div>
+          <div class="card-image" style="background-image: url('Salalah.jpg');">
+            <span class="card-badge">Green Paradise</span>
+            <h2>Salalah</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-salalah')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Nizwa</h3><span class="badge">Cultural</span></div>
+          <div class="card-image" style="background-image: url('nizwa.jpg');">
+            <span class="card-badge">Ancient Capital</span>
+            <h2>Nizwa</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-nizwa')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Sur</h3><span class="badge">Maritime</span></div>
+          <div class="card-image" style="background-image: url('Sur.jpg');">
+            <span class="card-badge">Dhow Building</span>
+            <h2>Sur</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-sur')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Bahla</h3><span class="badge">UNESCO</span></div>
+          <div class="card-image" style="background-image: url('bahla.jpg');">
+            <span class="card-badge">Mudbrick Fort</span>
+            <h2>Bahla</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-bahla')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Qatar Section ===== -->
+  <div id="section-qatar" class="section">
+    <div class="country-header">
+      <h2>🇶🇦 Explore Qatar</h2>
+      <p>From the futuristic skyline of Lusail to the ancient ruins of Zubarah</p>
+      <button class="back-btn" onclick="showCountries()">← Back to Countries</button>
+    </div>
+
+    <div class="container">
+      <div class="cities-grid">
+
+        <div class="city-card">
+          <div class="card-header"><h3>Doha</h3><span class="badge">Capital</span></div>
+          <div class="card-image" style="background-image: url('doha.jpg');">
+            <span class="card-badge">Modern Hub</span>
+            <h2>Doha</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-doha')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Al Wakrah</h3><span class="badge">Coastal</span></div>
+          <div class="card-image" style="background-image: url('wakrah.jpg');">
+            <span class="card-badge">Traditional</span>
+            <h2>Al Wakrah</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-wakrah')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Al Khor</h3><span class="badge">Northern</span></div>
+          <div class="card-image" style="background-image: url('khor.jpg');">
+            <span class="card-badge">Pearl Heritage</span>
+            <h2>Al Khor</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-alkhor')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Lusail</h3><span class="badge">Futuristic</span></div>
+          <div class="card-image" style="background-image: url('lusail.jpg');">
+            <span class="card-badge">Smart City</span>
+            <h2>Lusail</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-lusail')">Quick View</button>
+        </div>
+
+        <div class="city-card">
+          <div class="card-header"><h3>Zubarah</h3><span class="badge">UNESCO</span></div>
+          <div class="card-image" style="background-image: url('zubarah.jpg');">
+            <span class="card-badge">Ancient Fort</span>
+            <h2>Zubarah</h2>
+          </div>
+          <button class="card-btn" onclick="openModal('modal-zubarah')">Quick View</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODALS ===== -->
+
+  <div id="modal-alula" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('alula.jpg');"></div>
+      <div class="modal-text">
+        <h2>AlUla, Saudi Arabia 🇸🇦</h2>
+        <p>A stunning desert oasis and a living museum. Home to Hegra, the Kingdom's first UNESCO World Heritage site, featuring magnificent rock-cut tombs. Towering sandstone formations and starry nights make every moment here feel like a journey back in time.</p>
+        <a href="guide.html" class="modal-btn">Get AlUla Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-abha" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('abha.jpg');"></div>
+      <div class="modal-text">
+        <h2>Abha, Saudi Arabia 🇸🇦</h2>
+        <p>The green jewel of the Asir region, where misty mountains meet vibrant, colorful villages. A refreshing escape with cool breezes, terraced farms, and breathtaking panoramic views that make you feel on top of the world.</p>
+        <a href="guide.html" class="modal-btn">Get Abha Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-jeddah" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('jeddah.jpg');"></div>
+      <div class="modal-text">
+        <h2>Jeddah, Saudi Arabia 🇸🇦</h2>
+        <p>The historic gateway to the holy cities, famous for its stunning Al-Balad district with intricate coral-stone architecture and wooden rawashin. The vibrant Red Sea Corniche and lively traditional souqs give it a unique, welcoming soul.</p>
+        <a href="guide.html" class="modal-btn">Get Jeddah Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-riyadh" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('riyadh.jpg');"></div>
+      <div class="modal-text">
+        <h2>Riyadh, Saudi Arabia 🇸🇦</h2>
+        <p>The vibrant, fast-growing capital where gleaming modern skyscrapers stand alongside historic palaces. A city of dynamic energy, world-class museums, bustling traditional markets, and a vision that is shaping the future.</p>
+        <a href="guide.html" class="modal-btn">Get Riyadh Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-diriyah" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('diriyah.jpg');"></div>
+      <div class="modal-text">
+        <h2>Diriyah, Saudi Arabia 🇸🇦</h2>
+        <p>The historic birthplace of the First Saudi State and a stunning UNESCO World Heritage site. The majestic mud-brick ruins of At-Turaif tell the story of the Kingdom's roots, beautifully illuminated at night along the serene Wadi Hanifah.</p>
+        <a href="guide.html" class="modal-btn">Get Diriyah Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-socotra" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('socotra.jpg');"></div>
+      <div class="modal-text">
+        <h2>Socotra Island, Yemen 🇾🇪</h2>
+        <p>The "Galapagos of the Indian Ocean," a place that feels like another planet. Home to the otherworldly Dragon Blood Trees, white sand dunes, and hidden caves. With one-third of its plant life found nowhere else on Earth, Socotra is a living museum of evolution and a paradise for nature lovers.</p>
+        <a href="guide.html" class="modal-btn">Get Socotra Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-sanaa" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('sanaa.jpg');"></div>
+      <div class="modal-text">
+        <h2>Old Sana&#x27;a, Yemen 🇾🇪</h2>
+        <p>One of the oldest continuously inhabited cities in the world, a UNESCO World Heritage Site. Its iconic tower houses, painted in white gypsum and adorned with colorful stained-glass windows, rise like gingerbread creations against the mountain sky. Walking its narrow alleys feels like stepping into a thousand-year-old story.</p>
+        <a href="guide.html" class="modal-btn">Get Sana&#x27;a Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-shibam" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('shibam.jpg');"></div>
+      <div class="modal-text">
+        <h2>Shibam Hadramaut, Yemen 🇾🇪</h2>
+        <p>The legendary "Manhattan of the Desert," a UNESCO World Heritage Site featuring the world's oldest mud-brick skyscrapers, some rising eight stories high. Built in the 16th century to protect against Bedouin raids, this vertical city is a breathtaking architectural marvel rising from the lush Hadramaut Valley.</p>
+        <a href="guide.html" class="modal-btn">Get Shibam Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ibb" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('ibb.jpg');"></div>
+      <div class="modal-text">
+        <h2>Ibb, Yemen 🇾🇪</h2>
+        <p>Known as the "Green Mountain," Ibb is Yemen's hidden paradise of terraced fields, ancient springs, and misty peaks. The famous Dar al-Hajar (Rock Palace) sits dramatically atop a granite outcrop, and the surrounding villages feel like a living painting of emerald valleys and stone houses.</p>
+        <a href="guide.html" class="modal-btn">Get Ibb Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-aden" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('aden.jpg');"></div>
+      <div class="modal-text">
+        <h2>Aden, Yemen 🇾🇪</h2>
+        <p>The historic port city cradled by volcanic mountains and the deep blue Arabian Sea. Once one of the world's busiest trading hubs, Aden still whispers tales of sailors and spices. From the towering Shamsan Mountain to the ancient Cisterns of Tawila, every corner tells a story of maritime glory.</p>
+        <a href="guide.html" class="modal-btn">Get Aden Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-cairo" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('image.png');"></div>
+      <div class="modal-text">
+        <h2>Cairo &amp; Giza, Egypt 🇪🇬</h2>
+        <p>The city of a thousand minarets, where the Great Pyramids of Giza stand as eternal witnesses to human civilization, blending ancient history with vibrant modern life.</p>
+        <a href="guide.html" class="modal-btn">Get Cairo Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-luxor" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('luxor.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Luxor, Egypt 🇪🇬</h2>
+        <p>Known as the world's greatest open-air museum, featuring the majestic Valley of the Kings, Karnak Temple, and the serene banks of the Nile.</p>
+        <a href="guide.html" class="modal-btn">Get Luxor Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-aswan" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('aswan.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Aswan, Egypt 🇪🇬</h2>
+        <p>The jewel of the Nile, where the water is calmer and the vibrant Nubian culture shines. Famous for the High Dam, Philae Temple, and Elephantine Island.</p>
+        <a href="guide.html" class="modal-btn">Get Aswan Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-alexandria" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('alex1.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Alexandria, Egypt 🇪🇬</h2>
+        <p>The Bride of the Mediterranean. A city where history meets the sea, featuring the modern Bibliotheca Alexandrina, Qaitbay Citadel, and a vibrant coastal corniche.</p>
+        <a href="guide.html" class="modal-btn">Get Alexandria Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-newalamein" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('new%20al.jpeg');"></div>
+      <div class="modal-text">
+        <h2>New Alamein, Egypt 🇪🇬</h2>
+        <p>A stunning modern coastal city on the Mediterranean, featuring pristine white-sand beaches, luxury resorts, and a vibrant marina.</p>
+        <a href="guide.html" class="modal-btn">Get New Alamein Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-elgouna" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('elgouna.jpeg');"></div>
+      <div class="modal-text">
+        <h2>El Gouna, Egypt 🇪🇬</h2>
+        <p>The "Venice of the Red Sea," a luxurious, family-friendly resort town built across islands, known for its lagoons, golf courses, and vibrant nightlife.</p>
+        <a href="guide.html" class="modal-btn">Get El Gouna Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-dahab" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('dahab.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Dahab, Egypt 🇪🇬</h2>
+        <p>A laid-back coastal town on the Sinai Peninsula. Famous for the legendary Blue Hole, world-class windsurfing, and a relaxed bohemian vibe.</p>
+        <a href="guide.html" class="modal-btn">Get Dahab Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-siwa" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('siwa.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Siwa Oasis, Egypt 🇪🇬</h2>
+        <p>A remote and magical oasis near the Libyan border. Known for its unique culture, salt lakes, the Oracle Temple, and stunning desert landscapes.</p>
+        <a href="guide.html" class="modal-btn">Get Siwa Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-khan" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('khan.jpeg');"></div>
+      <div class="modal-text">
+        <h2>Khan El Khalili &amp; Al-Muizz, Egypt 🇪🇬</h2>
+        <p>The beating heart of historic Cairo. Wander through vibrant, colorful streets filled with traditional souks, Islamic architecture, and the true soul of the city.</p>
+        <a href="guide.html" class="modal-btn">Get Old Cairo Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-countryside" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('reef.jpeg');"></div>
+      <div class="modal-text">
+        <h2>The Egyptian Countryside 🇪🇬</h2>
+        <p>Experience the authentic, true soul of Egypt away from the crowds. Lush green fields, traditional villages, and the timeless rhythm of the Nile.</p>
+        <a href="guide.html" class="modal-btn">Get Countryside Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-khartoum" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('khartourm.jpg');"></div>
+      <div class="modal-text">
+        <h2>Khartoum, Sudan 🇸🇩</h2>
+        <p>The vibrant capital where the Blue and White Niles meet at the famous Al-Mogran. A city of rich cultural heritage, bustling traditional souqs, and the warm, welcoming spirit of the Sudanese people, blending history with a dynamic riverside life.</p>
+        <a href="guide.html" class="modal-btn">Get Khartoum Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-meroe" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('merowe.jpg');"></div>
+      <div class="modal-text">
+        <h2>Meroe, Sudan 🇸🇩</h2>
+        <p>The ancient capital of the Kingdom of Kush, home to over 200 majestic Nubian pyramids rising dramatically from the golden desert sands. A breathtaking archaeological wonder that whispers tales of a powerful, sophisticated, and forgotten civilization.</p>
+        <a href="guide.html" class="modal-btn">Get Meroe Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-portsudan" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('portsudan.jpg');"></div>
+      <div class="modal-text">
+        <h2>Port Sudan, Sudan 🇸🇩</h2>
+        <p>The gateway to the Red Sea, offering some of the world's most pristine and untouched coral reefs. A coastal haven where crystal-clear turquoise waters meet vibrant marine life, making it a paradise for divers and seekers of serene beaches.</p>
+        <a href="guide.html" class="modal-btn">Get Port Sudan Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-kassala" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('kassala.jpg');"></div>
+      <div class="modal-text">
+        <h2>Kassala, Sudan 🇸🇩</h2>
+        <p>Nestled at the foot of the dramatic, jagged Taka Mountains, this eastern gem is famous for its vibrant Wednesday market (Suq al-Arba'a) and rich Beja heritage. A place where rugged natural beauty meets deep-rooted cultural traditions.</p>
+        <a href="guide.html" class="modal-btn">Get Kassala Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-dongola" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('dongola.jpg');"></div>
+      <div class="modal-text">
+        <h2>Dongola, Sudan 🇸🇩</h2>
+        <p>A historic town on the banks of the Nile, rich in Nubian heritage and ancient archaeological sites like Old Dongola. A serene destination that offers a profound glimpse into the region's layered history and traditional, peaceful riverside life.</p>
+        <a href="guide.html" class="modal-btn">Get Dongola Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-marrakech" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('marrakech.jpg');"></div>
+      <div class="modal-text">
+        <h2>Marrakech, Morocco 🇲🇦</h2>
+        <p>The Red City pulses with life from dawn to midnight. Terracotta walls glow under the African sun, while the famous Jemaa el-Fnaa square transforms into a theatrical feast of snake charmers, storytellers, and sizzling street food. Behind every ornate door lies a hidden riad garden, and the scent of orange blossoms lingers in the warm air like a promise you never want to leave.</p>
+        <a href="guide.html" class="modal-btn">Get Marrakech Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-chefchaouen" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('Chefchaouen.jpg');"></div>
+      <div class="modal-text">
+        <h2>Chefchaouen, Morocco 🇲🇦</h2>
+        <p>The Blue Pearl of the Rif Mountains, where every wall, door, and staircase is painted in dreamy shades of blue. Walking through its narrow medina feels like wandering inside a watercolor painting. Cats nap on colorful steps, locals sip mint tea in quiet corners, and the mountain air carries a peaceful silence that makes time slow down. A photographer's paradise and a poet's quiet refuge.</p>
+        <a href="guide.html" class="modal-btn">Get Chefchaouen Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-fes" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('Fes.jpg');"></div>
+      <div class="modal-text">
+        <h2>Fes, Morocco 🇲🇦</h2>
+        <p>The spiritual and intellectual heart of Morocco, home to the world's oldest university and the largest car-free urban zone on Earth. Its ancient medina is a labyrinth of 9,000 alleyways where artisans still craft leather, ceramics, and brass by hand, just as they did a thousand years ago. The famous tanneries dye hides in rainbow-colored stone vats, and every turn reveals a hidden mosque, a quiet fountain, or the echo of a call to prayer.</p>
+        <a href="guide.html" class="modal-btn">Get Fes Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-rabat" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('rabat.jpg');"></div>
+      <div class="modal-text">
+        <h2>Rabat, Morocco 🇲🇦</h2>
+        <p>The elegant capital where royal grandeur meets Atlantic serenity. The iconic Hassan Tower stands unfinished yet majestic beside the modern Mausoleum of Mohammed V, while the Kasbah of the Udayas crowns a cliff overlooking the endless ocean. Wide boulevards lined with jacaranda trees, pristine beaches, and a refined café culture make Rabat the most peaceful and sophisticated of Morocco's great cities.</p>
+        <a href="guide.html" class="modal-btn">Get Rabat Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-casablanca" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('casablanca.jpg');"></div>
+      <div class="modal-text">
+        <h2>Casablanca, Morocco 🇲🇦</h2>
+        <p>The beating economic heart of Morocco, where Art Deco architecture meets modern skyscrapers along the Atlantic coast. The magnificent Hassan II Mosque, one of the largest in the world, rises directly from the ocean with its glass floor revealing the waves beneath. Beyond the famous movie name, Casablanca surprises with its vibrant corniche, lively seafood restaurants, and a cosmopolitan energy that never sleeps.</p>
+        <a href="guide.html" class="modal-btn">Get Casablanca Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-amman" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('amman.jpg');"></div>
+      <div class="modal-text">
+        <h2>Amman, Jordan 🇯🇴</h2>
+        <p>A city of seven hills where white stone buildings glow under the sun. The ancient Roman Theater sits quietly among bustling modern cafés, and the Citadel overlooks a skyline that blends tradition with a vibrant contemporary soul. Amman welcomes you with warm hospitality and a charm that grows on you with every visit.</p>
+        <a href="guide.html" class="modal-btn">Get Amman Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-petra" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('petra.jpg');"></div>
+      <div class="modal-text">
+        <h2>Petra, Jordan 🇯🇴</h2>
+        <p>The rose-red city half as old as time. Walk through the narrow Siq canyon and feel your breath stop as the Treasury reveals itself, carved into pink and orange rock thousands of years ago. Every stone whispers tales of the Nabataeans, and the colors at sunset paint a scene that no photograph can truly capture.</p>
+        <a href="guide.html" class="modal-btn">Get Petra Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-deadsea" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('deadsea.jpg');"></div>
+      <div class="modal-text">
+        <h2>Dead Sea, Jordan 🇯🇴</h2>
+        <p>The lowest point on Earth, where you can float effortlessly on water so dense with minerals that sinking is impossible. Black mud wraps your skin like a natural spa, and the shimmering surface reflects a sky framed by rugged mountains. A surreal, peaceful place that feels like a secret the world kept just for you.</p>
+        <a href="guide.html" class="modal-btn">Get Dead Sea Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-jerash" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('jerash.jpg');"></div>
+      <div class="modal-text">
+        <h2>Jerash, Jordan 🇯🇴</h2>
+        <p>The best-preserved Roman provincial city in the world, outside of Italy. Walk through the Oval Plaza, cross beneath the towering Arch of Hadrian, and imagine chariots racing in the Hippodrome. Golden columns stand proudly against the blue sky, and every corner feels like stepping directly into a history book.</p>
+        <a href="guide.html" class="modal-btn">Get Jerash Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-ajloun" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('ajloun.jpg');"></div>
+      <div class="modal-text">
+        <h2>Ajloun, Jordan 🇯🇴</h2>
+        <p>A green escape of oak and pine forests, where the medieval Ajloun Castle stands guard over misty valleys. The air smells of wild thyme and earth, and hiking trails wind through villages where time moves slowly. It's Jordan's quiet, lush heart — a place that soothes the soul and rewards the curious traveler.</p>
+        <a href="guide.html" class="modal-btn">Get Ajloun Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-wadirum" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('wadirum.jpg');"></div>
+      <div class="modal-text">
+        <h2>Wadi Rum, Jordan 🇯🇴</h2>
+        <p>The Valley of the Moon, where towering red sandstone cliffs rise from endless dunes like a Martian dream. At night, the silence is broken only by Bedouin poetry and a sky so full of stars it feels within reach. Sleep in a bubble tent under the Milky Way and wake up to a sunrise that sets the desert on fire.</p>
+        <a href="guide.html" class="modal-btn">Get Wadi Rum Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-salt" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('salt.jpg');"></div>
+      <div class="modal-text">
+        <h2>Salt, Jordan 🇯🇴</h2>
+        <p>The "City of Kings," built on three hills and crowned with honey-colored yellow stone houses from the Ottoman era. Narrow staircases connect old souks, traditional coffeehouses fill the air with cardamom, and every façade tells a story of Jordan's authentic heritage. A UNESCO-listed gem that feels like a living museum.</p>
+        <a href="guide.html" class="modal-btn">Get Salt Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-muscat" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('muscat.jpg');"></div>
+      <div class="modal-text">
+        <h2>Muscat, Oman 🇴🇲</h2>
+        <p>A serene capital where whitewashed buildings nestle between rugged mountains and the turquoise Gulf of Oman. The magnificent Sultan Qaboos Grand Mosque dazzles with its hand-woven carpet and Swarovski chandelier, while the old Mutrah Souq fills the air with the scent of frankincense.</p>
+        <a href="guide.html" class="modal-btn">Get Muscat Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-rustaq" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('rustaq.jpg');"></div>
+      <div class="modal-text">
+        <h2>Rustaq, Oman 🇴🇲</h2>
+        <p>A hidden gem tucked in the Al Batinah region, famous for its imposing 17th-century fort and natural hot springs that bubble up from the earth. Date palm oases surround the town, and the Friday goat market is a lively tradition.</p>
+        <a href="guide.html" class="modal-btn">Get Rustaq Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-salalah" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('Salalah.jpg');"></div>
+      <div class="modal-text">
+        <h2>Salalah, Oman 🇴🇲</h2>
+        <p>The tropical surprise of the Arabian Peninsula. During the Khareef season, monsoon clouds roll in and transform the region into a lush, misty paradise of green mountains, flowing waterfalls, and coconut palms.</p>
+        <a href="guide.html" class="modal-btn">Get Salalah Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-nizwa" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('nizwa.jpg');"></div>
+      <div class="modal-text">
+        <h2>Nizwa, Oman 🇴🇲</h2>
+        <p>The ancient capital of Oman and its cultural heart. The massive circular Nizwa Fort still stands proudly over a bustling Friday goat and date market that feels untouched by time.</p>
+        <a href="guide.html" class="modal-btn">Get Nizwa Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-sur" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('Sur.jpg');"></div>
+      <div class="modal-text">
+        <h2>Sur, Oman 🇴🇲</h2>
+        <p>A historic maritime city where traditional wooden dhows are still handcrafted in ancient boatyards. At dawn, fishing boats return with the day's catch, and nearby Ras al Jinz hosts green sea turtles.</p>
+        <a href="guide.html" class="modal-btn">Get Sur Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-bahla" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('bahla.jpg');"></div>
+      <div class="modal-text">
+        <h2>Bahla, Oman 🇴🇲</h2>
+        <p>Home to one of the oldest and largest mudbrick forts in the Arabian Peninsula, now a UNESCO World Heritage Site. A quiet oasis town where pottery is still crafted by hand in traditional kilns.</p>
+        <a href="guide.html" class="modal-btn">Get Bahla Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-doha" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('doha.jpg');"></div>
+      <div class="modal-text">
+        <h2>Doha, Qatar 🇶🇦</h2>
+        <p>The dazzling capital where a futuristic skyline meets deep-rooted heritage. From the iconic Museum of Islamic Art to the bustling lanes of Souq Waqif, and the stunning Corniche stretching along the Arabian Gulf, Doha is a city of contrasts that captivates every visitor.</p>
+        <a href="guide.html" class="modal-btn">Get Doha Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-wakrah" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('wakrah.jpg');"></div>
+      <div class="modal-text">
+        <h2>Al Wakrah, Qatar 🇶🇦</h2>
+        <p>A charming coastal town south of Doha, where traditional Qatari architecture meets the sea. Its historic fish market, dhow harbor, and the striking Al Janoub Stadium make it a perfect blend of old-world charm and modern sporting legacy.</p>
+        <a href="guide.html" class="modal-btn">Get Al Wakrah Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-alkhor" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('khor.jpg');"></div>
+      <div class="modal-text">
+        <h2>Al Khor, Qatar 🇶🇦</h2>
+        <p>The northern gem of Qatar, once a thriving center of the pearl diving industry. Its picturesque harbor, Al Khor Park, and the mysterious Purple Island (Jazirat Bin Ghanim) offer a peaceful escape into nature and ancient maritime history.</p>
+        <a href="guide.html" class="modal-btn">Get Al Khor Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-lusail" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('lusail.jpg');"></div>
+      <div class="modal-text">
+        <h2>Lusail, Qatar 🇶🇦</h2>
+        <p>The smart city of tomorrow, rising from the desert with futuristic architecture, a vibrant marina, and the iconic Lusail Stadium that hosted the FIFA World Cup final. A shining symbol of Qatar's bold vision for the future.</p>
+        <a href="guide.html" class="modal-btn">Get Lusail Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-zubarah" class="modal">
+    <div class="modal-content">
+      <a href="#" class="close-btn">✕</a>
+      <div class="modal-image" style="background-image: url('zubarah.jpg');"></div>
+      <div class="modal-text">
+        <h2>Zubarah, Qatar 🇶🇦</h2>
+        <p>A UNESCO World Heritage Site and one of the best-preserved merchant towns in the Gulf. The ancient fort and ruins whisper tales of a bustling 18th-century pearl trading hub, offering a profound journey into Qatar's authentic roots.</p>
+        <a href="guide.html" class="modal-btn">Get Zubarah Guide</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Travel Diary | Explore the World, Discover New Places ✈</p>
+  </footer>
+
+  <script>
+    function showCountry(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById('section-' + id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showCountries() {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById('countries-view').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeAllModals() {
+      document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+      document.body.style.overflow = 'auto';
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          closeAllModals();
+        });
+      });
+      document.querySelectorAll('.modal').forEach(m => {
+        m.addEventListener('click', function(e) {
+          if (e.target === this) closeAllModals();
+        });
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeAllModals();
+      });
+    });
+  </script>
+</body>
+</html>

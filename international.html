@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Diary | International Destinations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Tajawal:wght@400;500;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-logo">✈ Travel Diary</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="arab.html">Arab Destinations</a>
+      <a href="international.html" class="active">International</a>
+      <a href="guide.html">Get Your Guide</a>
+    </div>
+  </nav>
+
+  <div id="countries-view" class="section active">
+    <div class="page-header">
+      <h1>Explore the World 🌐</h1>
+      <p>From the romantic streets of Paris to the ancient temples of Japan</p>
+    </div>
+    <div class="container">
+      <div class="countries-grid">
+        <div class="country-card"><div class="card-header"><h3>Italy</h3><span class="badge">Europe</span></div><div class="card-image" style="background-image: url('Italy.enc');"><span class="card-badge">🇮🇹</span><h2>Italy</h2></div><button class="card-btn" onclick="showCountry('italy')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>France</h3><span class="badge">Europe</span></div><div class="card-image" style="background-image: url('France.enc');"><span class="card-badge">🇫🇷</span><h2>France</h2></div><button class="card-btn" onclick="showCountry('france')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>Japan</h3><span class="badge">Asia</span></div><div class="card-image" style="background-image: url('Japan.enc');"><span class="card-badge">🇯🇵</span><h2>Japan</h2></div><button class="card-btn" onclick="showCountry('japan')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>Switzerland</h3><span class="badge">Europe</span></div><div class="card-image" style="background-image: url('Switzerland.enc');"><span class="card-badge">🇨🇭</span><h2>Switzerland</h2></div><button class="card-btn" onclick="showCountry('switzerland')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>Turkey</h3><span class="badge">Europe/Asia</span></div><div class="card-image" style="background-image: url('Turkey.enc');"><span class="card-badge">🇹🇷</span><h2>Turkey</h2></div><button class="card-btn" onclick="showCountry('turkey')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>Spain</h3><span class="badge">Europe</span></div><div class="card-image" style="background-image: url('Spain.enc');"><span class="card-badge">🇪🇸</span><h2>Spain</h2></div><button class="card-btn" onclick="showCountry('spain')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>South Korea</h3><span class="badge">Asia</span></div><div class="card-image" style="background-image: url('South Korea.enc');"><span class="card-badge">🇰🇷</span><h2>South Korea</h2></div><button class="card-btn" onclick="showCountry('korea')">Explore Cities</button></div>
+        <div class="country-card"><div class="card-header"><h3>United Kingdom</h3><span class="badge">Europe</span></div><div class="card-image" style="background-image: url('United Kingdom.jpg');"><span class="card-badge">🇬🇧</span><h2>UK</h2></div><button class="card-btn" onclick="showCountry('uk')">Explore Cities</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Italy - 10 cities -->
+  <div id="section-italy" class="section">
+    <div class="country-header"><h2>🇮🇹 Explore Italy</h2><p>Renaissance art, Roman ruins, and world-famous cuisine</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Rome</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Rome.jpg');"><span class="card-badge">Eternal</span><h2>Rome</h2></div><button class="card-btn" onclick="openModal('modal-rome')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Venice</h3><span class="badge">Romantic</span></div><div class="card-image" style="background-image: url('Venice.jpg');"><span class="card-badge">Canals</span><h2>Venice</h2></div><button class="card-btn" onclick="openModal('modal-venice')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Florence</h3><span class="badge">Art</span></div><div class="card-image" style="background-image: url('Florence.jpg');"><span class="card-badge">Renaissance</span><h2>Florence</h2></div><button class="card-btn" onclick="openModal('modal-florence')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Bari</h3><span class="badge">Coastal</span></div><div class="card-image" style="background-image: url('Bari.enc');"><span class="card-badge">Old Town</span><h2>Bari</h2></div><button class="card-btn" onclick="openModal('modal-bari')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Lecce</h3><span class="badge">Baroque</span></div><div class="card-image" style="background-image: url('Lecce.enc');"><span class="card-badge">Puglia</span><h2>Lecce</h2></div><button class="card-btn" onclick="openModal('modal-lecce')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Palermo</h3><span class="badge">Sicily</span></div><div class="card-image" style="background-image: url('Palermo.enc');"><span class="card-badge">Capital</span><h2>Palermo</h2></div><button class="card-btn" onclick="openModal('modal-palermo')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Positano</h3><span class="badge">Amalfi</span></div><div class="card-image" style="background-image: url('Positano.enc');"><span class="card-badge">Cliff Village</span><h2>Positano</h2></div><button class="card-btn" onclick="openModal('modal-positano')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Siena</h3><span class="badge">Medieval</span></div><div class="card-image" style="background-image: url('Siena.enc');"><span class="card-badge">Tuscany</span><h2>Siena</h2></div><button class="card-btn" onclick="openModal('modal-siena')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Taormina</h3><span class="badge">Sicily</span></div><div class="card-image" style="background-image: url('Taormina.enc');"><span class="card-badge">Theatre</span><h2>Taormina</h2></div><button class="card-btn" onclick="openModal('modal-taormina')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Turin</h3><span class="badge">Alps</span></div><div class="card-image" style="background-image: url('Turin.enc');"><span class="card-badge">Mole</span><h2>Turin</h2></div><button class="card-btn" onclick="openModal('modal-turin')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- France - 6 cities -->
+  <div id="section-france" class="section">
+    <div class="country-header"><h2>🇫🇷 Explore France</h2><p>The city of love, fashion, and iconic landmarks</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Paris</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Paris.jpg');"><span class="card-badge">Romantic</span><h2>Paris</h2></div><button class="card-btn" onclick="openModal('modal-paris')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Nice</h3><span class="badge">Coastal</span></div><div class="card-image" style="background-image: url('Nice.jpg');"><span class="card-badge">Riviera</span><h2>Nice</h2></div><button class="card-btn" onclick="openModal('modal-nice')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Lyon</h3><span class="badge">Gastronomy</span></div><div class="card-image" style="background-image: url('Lyon.jpg');"><span class="card-badge">Foodie</span><h2>Lyon</h2></div><button class="card-btn" onclick="openModal('modal-lyon')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Marseille</h3><span class="badge">Port</span></div><div class="card-image" style="background-image: url('Marseille.enc');"><span class="card-badge">Old Port</span><h2>Marseille</h2></div><button class="card-btn" onclick="openModal('modal-marseille')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Bordeaux</h3><span class="badge">Wine</span></div><div class="card-image" style="background-image: url('Bordeaux.enc');"><span class="card-badge">Wine</span><h2>Bordeaux</h2></div><button class="card-btn" onclick="openModal('modal-bordeaux')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Strasbourg</h3><span class="badge">Alsace</span></div><div class="card-image" style="background-image: url('Strasbourg.enc');"><span class="card-badge">Petite France</span><h2>Strasbourg</h2></div><button class="card-btn" onclick="openModal('modal-strasbourg')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- Japan - 6 cities -->
+  <div id="section-japan" class="section">
+    <div class="country-header"><h2>🇯🇵 Explore Japan</h2><p>Ancient traditions meets cutting-edge technology</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Tokyo</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Tokyo.jpg');"><span class="card-badge">Neon</span><h2>Tokyo</h2></div><button class="card-btn" onclick="openModal('modal-tokyo')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Kyoto</h3><span class="badge">Cultural</span></div><div class="card-image" style="background-image: url('Kyoto.jpg');"><span class="card-badge">Temples</span><h2>Kyoto</h2></div><button class="card-btn" onclick="openModal('modal-kyoto')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Osaka</h3><span class="badge">Vibrant</span></div><div class="card-image" style="background-image: url('Osaka.jpg');"><span class="card-badge">Street Food</span><h2>Osaka</h2></div><button class="card-btn" onclick="openModal('modal-osaka')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Nara</h3><span class="badge">Deer Park</span></div><div class="card-image" style="background-image: url('Nara.enc');"><span class="card-badge">Deer</span><h2>Nara</h2></div><button class="card-btn" onclick="openModal('modal-nara')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Hiroshima</h3><span class="badge">Peace</span></div><div class="card-image" style="background-image: url('Hiroshima.enc');"><span class="card-badge">Memorial</span><h2>Hiroshima</h2></div><button class="card-btn" onclick="openModal('modal-hiroshima')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Sapporo</h3><span class="badge">Snow</span></div><div class="card-image" style="background-image: url('Sapporo.enc');"><span class="card-badge">Festival</span><h2>Sapporo</h2></div><button class="card-btn" onclick="openModal('modal-sapporo')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- Switzerland - 6 cities -->
+  <div id="section-switzerland" class="section">
+    <div class="country-header"><h2>🇨🇭 Explore Switzerland</h2><p>Majestic Alps, pristine lakes, and charming villages</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Zurich</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Zurich.jpg');"><span class="card-badge">Lake</span><h2>Zurich</h2></div><button class="card-btn" onclick="openModal('modal-zurich')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Geneva</h3><span class="badge">Diplomatic</span></div><div class="card-image" style="background-image: url('Geneva.jpg');"><span class="card-badge">Jet d'Eau</span><h2>Geneva</h2></div><button class="card-btn" onclick="openModal('modal-geneva')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Interlaken</h3><span class="badge">Alps</span></div><div class="card-image" style="background-image: url('Interlaken.jpg');"><span class="card-badge">Adventure</span><h2>Interlaken</h2></div><button class="card-btn" onclick="openModal('modal-interlaken')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Lucerne</h3><span class="badge">Lake</span></div><div class="card-image" style="background-image: url('Lucerne.enc');"><span class="card-badge">Bridge</span><h2>Lucerne</h2></div><button class="card-btn" onclick="openModal('modal-lucerne')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Bern</h3><span class="badge">Old Town</span></div><div class="card-image" style="background-image: url('Bern.enc');"><span class="card-badge">Clock</span><h2>Bern</h2></div><button class="card-btn" onclick="openModal('modal-bern')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Zermatt</h3><span class="badge">Matterhorn</span></div><div class="card-image" style="background-image: url('Zermatt.enc');"><span class="card-badge">Alps</span><h2>Zermatt</h2></div><button class="card-btn" onclick="openModal('modal-zermatt')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- Turkey - 6 cities -->
+  <div id="section-turkey" class="section">
+    <div class="country-header"><h2>🇹🇷 Explore Turkey</h2><p>Where East meets West, with hot air balloons and bazaars</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Istanbul</h3><span class="badge">Historical</span></div><div class="card-image" style="background-image: url('Istanbul.jpg');"><span class="card-badge">Two Continents</span><h2>Istanbul</h2></div><button class="card-btn" onclick="openModal('modal-istanbul')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Cappadocia</h3><span class="badge">Unique</span></div><div class="card-image" style="background-image: url('Cappadocia.jpg');"><span class="card-badge">Balloons</span><h2>Cappadocia</h2></div><button class="card-btn" onclick="openModal('modal-cappadocia')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Antalya</h3><span class="badge">Coastal</span></div><div class="card-image" style="background-image: url('Antalya.jpg');"><span class="card-badge">Turquoise</span><h2>Antalya</h2></div><button class="card-btn" onclick="openModal('modal-antalya')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Bodrum</h3><span class="badge">Aegean</span></div><div class="card-image" style="background-image: url('Bodrum.enc');"><span class="card-badge">Castle</span><h2>Bodrum</h2></div><button class="card-btn" onclick="openModal('modal-bodrum')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Trabzon</h3><span class="badge">Black Sea</span></div><div class="card-image" style="background-image: url('Trabzon.enc');"><span class="card-badge">Monastery</span><h2>Trabzon</h2></div><button class="card-btn" onclick="openModal('modal-trabzon')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Pamukkale</h3><span class="badge">Thermal</span></div><div class="card-image" style="background-image: url('Pamukkale.enc');"><span class="card-badge">Terraces</span><h2>Pamukkale</h2></div><button class="card-btn" onclick="openModal('modal-pamukkale')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- Spain - 6 cities -->
+  <div id="section-spain" class="section">
+    <div class="country-header"><h2>🇪🇸 Explore Spain</h2><p>Passionate flamenco, stunning architecture, sunny beaches</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Barcelona</h3><span class="badge">Artistic</span></div><div class="card-image" style="background-image: url('Barcelona.jpg');"><span class="card-badge">Gaudi</span><h2>Barcelona</h2></div><button class="card-btn" onclick="openModal('modal-barcelona')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Madrid</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Madrid.jpg');"><span class="card-badge">Museums</span><h2>Madrid</h2></div><button class="card-btn" onclick="openModal('modal-madrid')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Seville</h3><span class="badge">Cultural</span></div><div class="card-image" style="background-image: url('Seville.jpg');"><span class="card-badge">Flamenco</span><h2>Seville</h2></div><button class="card-btn" onclick="openModal('modal-seville')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Valencia</h3><span class="badge">Arts</span></div><div class="card-image" style="background-image: url('Valencia.enc');"><span class="card-badge">Paella</span><h2>Valencia</h2></div><button class="card-btn" onclick="openModal('modal-valencia')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Granada</h3><span class="badge">Alhambra</span></div><div class="card-image" style="background-image: url('Granada.enc');"><span class="card-badge">Palace</span><h2>Granada</h2></div><button class="card-btn" onclick="openModal('modal-granada')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Ibiza</h3><span class="badge">Island</span></div><div class="card-image" style="background-image: url('Ibiza.enc');"><span class="card-badge">Beach</span><h2>Ibiza</h2></div><button class="card-btn" onclick="openModal('modal-ibiza')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- South Korea - 6 cities -->
+  <div id="section-korea" class="section">
+    <div class="country-header"><h2>🇰🇷 Explore South Korea</h2><p>K-pop culture, palaces, and neon-lit streets</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>Seoul</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('Seoul.jpg');"><span class="card-badge">K-Culture</span><h2>Seoul</h2></div><button class="card-btn" onclick="openModal('modal-seoul')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Busan</h3><span class="badge">Coastal</span></div><div class="card-image" style="background-image: url('Busan.jpg');"><span class="card-badge">Beaches</span><h2>Busan</h2></div><button class="card-btn" onclick="openModal('modal-busan')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Jeju Island</h3><span class="badge">Nature</span></div><div class="card-image" style="background-image: url('Jeju Island.jpg');"><span class="card-badge">Volcanic</span><h2>Jeju Island</h2></div><button class="card-btn" onclick="openModal('modal-jeju')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Jeonju</h3><span class="badge">Hanok</span></div><div class="card-image" style="background-image: url('Jeonju.enc');"><span class="card-badge">Village</span><h2>Jeonju</h2></div><button class="card-btn" onclick="openModal('modal-jeonju')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Gyeongju</h3><span class="badge">Historic</span></div><div class="card-image" style="background-image: url('Gyeongju.enc');"><span class="card-badge">Temple</span><h2>Gyeongju</h2></div><button class="card-btn" onclick="openModal('modal-gyeongju')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Incheon</h3><span class="badge">Modern</span></div><div class="card-image" style="background-image: url('Incheon.enc');"><span class="card-badge">Songdo</span><h2>Incheon</h2></div><button class="card-btn" onclick="openModal('modal-incheon')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- UK - 6 cities -->
+  <div id="section-uk" class="section">
+    <div class="country-header"><h2>🇬🇧 Explore the United Kingdom</h2><p>Royal heritage, castles, and multicultural cities</p><button class="back-btn" onclick="showCountries()">← Back to Countries</button></div>
+    <div class="container"><div class="cities-grid">
+      <div class="city-card"><div class="card-header"><h3>London</h3><span class="badge">Capital</span></div><div class="card-image" style="background-image: url('London.jpg');"><span class="card-badge">Iconic</span><h2>London</h2></div><button class="card-btn" onclick="openModal('modal-london')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Edinburgh</h3><span class="badge">Scottish</span></div><div class="card-image" style="background-image: url('Edinburgh.jpg');"><span class="card-badge">Castle</span><h2>Edinburgh</h2></div><button class="card-btn" onclick="openModal('modal-edinburgh')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Manchester</h3><span class="badge">Industrial</span></div><div class="card-image" style="background-image: url('Manchester.jpg');"><span class="card-badge">Music</span><h2>Manchester</h2></div><button class="card-btn" onclick="openModal('modal-manchester')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Bath</h3><span class="badge">Roman</span></div><div class="card-image" style="background-image: url('Bath.enc');"><span class="card-badge">Roman Baths</span><h2>Bath</h2></div><button class="card-btn" onclick="openModal('modal-bath')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>Liverpool</h3><span class="badge">Beatles</span></div><div class="card-image" style="background-image: url('Liverpool.enc');"><span class="card-badge">Dock</span><h2>Liverpool</h2></div><button class="card-btn" onclick="openModal('modal-liverpool')">Quick View</button></div>
+      <div class="city-card"><div class="card-header"><h3>York</h3><span class="badge">Medieval</span></div><div class="card-image" style="background-image: url('York.enc');"><span class="card-badge">Minster</span><h2>York</h2></div><button class="card-btn" onclick="openModal('modal-york')">Quick View</button></div>
+    </div></div>
+  </div>
+
+  <!-- MODALS - Old cities .jpg -->
+  <div id="modal-rome" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Rome.jpg');"></div><div class="modal-text"><h2>Rome, Italy 🇮🇹</h2><p>The Eternal City, home to the Colosseum, Vatican City, and centuries of history on every corner.</p><a href="guide.html" class="modal-btn">Get Rome Guide</a></div></div></div>
+  <div id="modal-venice" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Venice.jpg');"></div><div class="modal-text"><h2>Venice, Italy 🇮🇹</h2><p>The floating city of canals, gondolas, and Renaissance masterpieces built on 118 islands.</p><a href="guide.html" class="modal-btn">Get Venice Guide</a></div></div></div>
+  <div id="modal-florence" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Florence.jpg');"></div><div class="modal-text"><h2>Florence, Italy 🇮🇹</h2><p>The birthplace of the Renaissance, housing Michelangelo's David and Brunelleschi's dome.</p><a href="guide.html" class="modal-btn">Get Florence Guide</a></div></div></div>
+  <div id="modal-paris" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Paris.jpg');"></div><div class="modal-text"><h2>Paris, France 🇫🇷</h2><p>The City of Light, featuring the Eiffel Tower, Louvre Museum, and romantic café culture.</p><a href="guide.html" class="modal-btn">Get Paris Guide</a></div></div></div>
+  <div id="modal-nice" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Nice.jpg');"></div><div class="modal-text"><h2>Nice, France 🇫🇷</h2><p>The jewel of the French Riviera, with turquoise waters, pebble beaches, and old-town charm.</p><a href="guide.html" class="modal-btn">Get Nice Guide</a></div></div></div>
+  <div id="modal-lyon" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Lyon.jpg');"></div><div class="modal-text"><h2>Lyon, France 🇫🇷</h2><p>France's gastronomic capital, famous for its bouchons, silk weaving history, and Roman ruins.</p><a href="guide.html" class="modal-btn">Get Lyon Guide</a></div></div></div>
+  <div id="modal-tokyo" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Tokyo.jpg');"></div><div class="modal-text"><h2>Tokyo, Japan 🇯🇵</h2><p>A dazzling metropolis where neon-lit skyscrapers meet serene temples and cherry blossoms.</p><a href="guide.html" class="modal-btn">Get Tokyo Guide</a></div></div></div>
+  <div id="modal-kyoto" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Kyoto.jpg');"></div><div class="modal-text"><h2>Kyoto, Japan 🇯🇵</h2><p>The cultural heart of Japan, home to 1,600 temples, geisha districts, and zen gardens.</p><a href="guide.html" class="modal-btn">Get Kyoto Guide</a></div></div></div>
+  <div id="modal-osaka" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Osaka.jpg');"></div><div class="modal-text"><h2>Osaka, Japan 🇯🇵</h2><p>The kitchen of Japan, known for street food, vibrant nightlife, and Osaka Castle.</p><a href="guide.html" class="modal-btn">Get Osaka Guide</a></div></div></div>
+  <div id="modal-zurich" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Zurich.jpg');"></div><div class="modal-text"><h2>Zurich, Switzerland 🇨🇭</h2><p>A pristine lakeside city blending medieval charm with modern luxury and Alpine views.</p><a href="guide.html" class="modal-btn">Get Zurich Guide</a></div></div></div>
+  <div id="modal-geneva" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Geneva.jpg');"></div><div class="modal-text"><h2>Geneva, Switzerland 🇨🇭</h2><p>The international city of diplomacy, featuring the Jet d'Eau and stunning lakefront.</p><a href="guide.html" class="modal-btn">Get Geneva Guide</a></div></div></div>
+  <div id="modal-interlaken" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Interlaken.jpg');"></div><div class="modal-text"><h2>Interlaken, Switzerland 🇨🇭</h2><p>The adventure capital between two lakes, gateway to the Jungfrau region and Alps.</p><a href="guide.html" class="modal-btn">Get Interlaken Guide</a></div></div></div>
+  <div id="modal-istanbul" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Istanbul.jpg');"></div><div class="modal-text"><h2>Istanbul, Turkey 🇹🇷</h2><p>The only city spanning two continents, with the Hagia Sophia, Blue Mosque, and Grand Bazaar.</p><a href="guide.html" class="modal-btn">Get Istanbul Guide</a></div></div></div>
+  <div id="modal-cappadocia" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Cappadocia.jpg');"></div><div class="modal-text"><h2>Cappadocia, Turkey 🇹🇷</h2><p>A surreal landscape of fairy chimneys, cave hotels, and hot air balloon rides at dawn.</p><a href="guide.html" class="modal-btn">Get Cappadocia Guide</a></div></div></div>
+  <div id="modal-antalya" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Antalya.jpg');"></div><div class="modal-text"><h2>Antalya, Turkey 🇹🇷</h2><p>The turquoise coast of the Mediterranean, with ancient ruins and stunning beaches.</p><a href="guide.html" class="modal-btn">Get Antalya Guide</a></div></div></div>
+  <div id="modal-barcelona" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Barcelona.jpg');"></div><div class="modal-text"><h2>Barcelona, Spain 🇪🇸</h2><p>Gaudi's masterpiece city, featuring the Sagrada Familia, La Rambla, and Mediterranean beaches.</p><a href="guide.html" class="modal-btn">Get Barcelona Guide</a></div></div></div>
+  <div id="modal-madrid" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Madrid.jpg');"></div><div class="modal-text"><h2>Madrid, Spain 🇪🇸</h2><p>The royal capital with world-class museums like the Prado, vibrant nightlife, and tapas culture.</p><a href="guide.html" class="modal-btn">Get Madrid Guide</a></div></div></div>
+  <div id="modal-seville" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Seville.jpg');"></div><div class="modal-text"><h2>Seville, Spain 🇪🇸</h2><p>The soul of Andalusia, birthplace of flamenco, with the stunning Alcázar and Plaza de España.</p><a href="guide.html" class="modal-btn">Get Seville Guide</a></div></div></div>
+  <div id="modal-seoul" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Seoul.jpg');"></div><div class="modal-text"><h2>Seoul, South Korea 🇰🇷</h2><p>A dynamic capital where ancient palaces meet K-pop culture, street food, and neon districts.</p><a href="guide.html" class="modal-btn">Get Seoul Guide</a></div></div></div>
+  <div id="modal-busan" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Busan.jpg');"></div><div class="modal-text"><h2>Busan, South Korea 🇰🇷</h2><p>Korea's coastal gem, featuring Haeundae Beach, colorful Gamcheon Village, and seafood markets.</p><a href="guide.html" class="modal-btn">Get Busan Guide</a></div></div></div>
+  <div id="modal-jeju" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Jeju Island.jpg');"></div><div class="modal-text"><h2>Jeju Island, South Korea 🇰🇷</h2><p>A volcanic paradise with Hallasan mountain, lava tubes, and dramatic coastal cliffs.</p><a href="guide.html" class="modal-btn">Get Jeju Guide</a></div></div></div>
+  <div id="modal-london" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('London.jpg');"></div><div class="modal-text"><h2>London, United Kingdom 🇬🇧</h2><p>The iconic capital featuring Big Ben, the Tower of London, Buckingham Palace, and world-class museums.</p><a href="guide.html" class="modal-btn">Get London Guide</a></div></div></div>
+  <div id="modal-edinburgh" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Edinburgh.jpg');"></div><div class="modal-text"><h2>Edinburgh, United Kingdom 🇬🇧</h2><p>Scotland's dramatic capital, dominated by its hilltop castle and the Royal Mile's medieval charm.</p><a href="guide.html" class="modal-btn">Get Edinburgh Guide</a></div></div></div>
+  <div id="modal-manchester" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Manchester.jpg');"></div><div class="modal-text"><h2>Manchester, United Kingdom 🇬🇧</h2><p>A vibrant city of music, football, and industrial heritage with a thriving arts scene.</p><a href="guide.html" class="modal-btn">Get Manchester Guide</a></div></div></div>
+
+  <!-- MODALS - New Italy cities -->
+  <div id="modal-bari" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Bari.enc');"></div><div class="modal-text"><h2>Bari, Italy 🇮🇹</h2><p>Old town, Adriatic sea, and Saint Nicholas Basilica - the heart of Puglia.</p><a href="guide.html" class="modal-btn">Get Bari Guide</a></div></div></div>
+  <div id="modal-lecce" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Lecce.enc');"></div><div class="modal-text"><h2>Lecce, Italy 🇮🇹</h2><p>The Florence of the South - stunning Baroque architecture in golden stone.</p><a href="guide.html" class="modal-btn">Get Lecce Guide</a></div></div></div>
+  <div id="modal-palermo" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Palermo.enc');"></div><div class="modal-text"><h2>Palermo, Italy 🇮🇹</h2><p>Sicily's vibrant capital - Cathedral, markets, street food, and Mediterranean vibes.</p><a href="guide.html" class="modal-btn">Get Palermo Guide</a></div></div></div>
+  <div id="modal-positano" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Positano.enc');"></div><div class="modal-text"><h2>Positano, Italy 🇮🇹</h2><p>Colorful cliff village on the Amalfi Coast, turquoise sea and romantic beaches.</p><a href="guide.html" class="modal-btn">Get Positano Guide</a></div></div></div>
+  <div id="modal-siena" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Siena.enc');"></div><div class="modal-text"><h2>Siena, Italy 🇮🇹</h2><p>Medieval Piazza del Campo, Palio horse race, and Tuscan charm.</p><a href="guide.html" class="modal-btn">Get Siena Guide</a></div></div></div>
+  <div id="modal-taormina" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Taormina.enc');"></div><div class="modal-text"><h2>Taormina, Italy 🇮🇹</h2><p>Ancient Greek theatre, Mount Etna views, and stunning Sicilian coastline.</p><a href="guide.html" class="modal-btn">Get Taormina Guide</a></div></div></div>
+  <div id="modal-turin" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Turin.enc');"></div><div class="modal-text"><h2>Turin, Italy 🇮🇹</h2><p>Mole Antonelliana, Alps in the background, and elegant royal boulevards.</p><a href="guide.html" class="modal-btn">Get Turin Guide</a></div></div></div>
+
+  <!-- MODALS - New cities .enc -->
+  <div id="modal-marseille" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Marseille.enc');"></div><div class="modal-text"><h2>Marseille, France 🇫🇷</h2><p>France's oldest port city, with the Old Port, Notre-Dame de la Garde, and Mediterranean vibes.</p><a href="guide.html" class="modal-btn">Get Marseille Guide</a></div></div></div>
+  <div id="modal-bordeaux" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Bordeaux.enc');"></div><div class="modal-text"><h2>Bordeaux, France 🇫🇷</h2><p>The wine capital of the world, with Place de la Bourse and the Water Mirror.</p><a href="guide.html" class="modal-btn">Get Bordeaux Guide</a></div></div></div>
+  <div id="modal-strasbourg" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Strasbourg.enc');"></div><div class="modal-text"><h2>Strasbourg, France 🇫🇷</h2><p>Petite France, half-timbered houses, canals, and the stunning Cathedral.</p><a href="guide.html" class="modal-btn">Get Strasbourg Guide</a></div></div></div>
+  <div id="modal-nara" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Nara.enc');"></div><div class="modal-text"><h2>Nara, Japan 🇯🇵</h2><p>Home to friendly deer, Todaiji Temple, and beautiful cherry blossoms.</p><a href="guide.html" class="modal-btn">Get Nara Guide</a></div></div></div>
+  <div id="modal-hiroshima" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Hiroshima.enc');"></div><div class="modal-text"><h2>Hiroshima, Japan 🇯🇵</h2><p>A city of peace, with the Atomic Bomb Dome and Peace Memorial Park.</p><a href="guide.html" class="modal-btn">Get Hiroshima Guide</a></div></div></div>
+  <div id="modal-sapporo" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Sapporo.enc');"></div><div class="modal-text"><h2>Sapporo, Japan 🇯🇵</h2><p>Famous for its Snow Festival, Odori Park, and delicious ramen.</p><a href="guide.html" class="modal-btn">Get Sapporo Guide</a></div></div></div>
+  <div id="modal-lucerne" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Lucerne.enc');"></div><div class="modal-text"><h2>Lucerne, Switzerland 🇨🇭</h2><p>The Chapel Bridge, Lake Lucerne, and stunning Alpine views.</p><a href="guide.html" class="modal-btn">Get Lucerne Guide</a></div></div></div>
+  <div id="modal-bern" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Bern.enc');"></div><div class="modal-text"><h2>Bern, Switzerland 🇨🇭</h2><p>The old town, Zytglogge clock tower, and the Aare river.</p><a href="guide.html" class="modal-btn">Get Bern Guide</a></div></div></div>
+  <div id="modal-zermatt" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Zermatt.enc');"></div><div class="modal-text"><h2>Zermatt, Switzerland 🇨🇭</h2><p>Car-free village at the foot of the Matterhorn, perfect for skiing.</p><a href="guide.html" class="modal-btn">Get Zermatt Guide</a></div></div></div>
+  <div id="modal-bodrum" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Bodrum.enc');"></div><div class="modal-text"><h2>Bodrum, Turkey 🇹🇷</h2><p>Bodrum Castle, turquoise Aegean sea, and white-washed houses.</p><a href="guide.html" class="modal-btn">Get Bodrum Guide</a></div></div></div>
+  <div id="modal-trabzon" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Trabzon.enc');"></div><div class="modal-text"><h2>Trabzon, Turkey 🇹🇷</h2><p>Sumela Monastery, Black Sea coast, and green mountains.</p><a href="guide.html" class="modal-btn">Get Trabzon Guide</a></div></div></div>
+  <div id="modal-pamukkale" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Pamukkale.enc');"></div><div class="modal-text"><h2>Pamukkale, Turkey 🇹🇷</h2><p>White travertine terraces and thermal pools - the Cotton Castle.</p><a href="guide.html" class="modal-btn">Get Pamukkale Guide</a></div></div></div>
+  <div id="modal-valencia" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Valencia.enc');"></div><div class="modal-text"><h2>Valencia, Spain 🇪🇸</h2><p>City of Arts and Sciences, beaches, and the home of paella.</p><a href="guide.html" class="modal-btn">Get Valencia Guide</a></div></div></div>
+  <div id="modal-granada" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Granada.enc');"></div><div class="modal-text"><h2>Granada, Spain 🇪🇸</h2><p>The Alhambra palace, Sierra Nevada, and Andalusian charm.</p><a href="guide.html" class="modal-btn">Get Granada Guide</a></div></div></div>
+  <div id="modal-ibiza" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Ibiza.enc');"></div><div class="modal-text"><h2>Ibiza, Spain 🇪🇸</h2><p>Turquoise beaches, white houses, sunsets, and island nightlife.</p><a href="guide.html" class="modal-btn">Get Ibiza Guide</a></div></div></div>
+  <div id="modal-jeonju" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Jeonju.enc');"></div><div class="modal-text"><h2>Jeonju, South Korea 🇰🇷</h2><p>Hanok Village, traditional Korean houses, and famous bibimbap.</p><a href="guide.html" class="modal-btn">Get Jeonju Guide</a></div></div></div>
+  <div id="modal-gyeongju" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Gyeongju.enc');"></div><div class="modal-text"><h2>Gyeongju, South Korea 🇰🇷</h2><p>An open-air museum, Bulguksa temple, and cherry blossoms.</p><a href="guide.html" class="modal-btn">Get Gyeongju Guide</a></div></div></div>
+  <div id="modal-incheon" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Incheon.enc');"></div><div class="modal-text"><h2>Incheon, South Korea 🇰🇷</h2><p>Chinatown, Songdo skyline, and the gateway to Seoul.</p><a href="guide.html" class="modal-btn">Get Incheon Guide</a></div></div></div>
+  <div id="modal-bath" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Bath.enc');"></div><div class="modal-text"><h2>Bath, United Kingdom 🇬🇧</h2><p>Roman Baths, Georgian crescent, and historic architecture.</p><a href="guide.html" class="modal-btn">Get Bath Guide</a></div></div></div>
+  <div id="modal-liverpool" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('Liverpool.enc');"></div><div class="modal-text"><h2>Liverpool, United Kingdom 🇬🇧</h2><p>Royal Albert Dock, waterfront, and the home of The Beatles.</p><a href="guide.html" class="modal-btn">Get Liverpool Guide</a></div></div></div>
+  <div id="modal-york" class="modal"><div class="modal-content"><a href="#" class="close-btn">✕</a><div class="modal-image" style="background-image: url('York.enc');"></div><div class="modal-text"><h2>York, United Kingdom 🇬🇧</h2><p>York Minster, The Shambles, and medieval streets.</p><a href="guide.html" class="modal-btn">Get York Guide</a></div></div></div>
+
+  <footer>
+    <p>©️ 2026 Travel Diary | Explore the World, Discover New Places ✈️</p>
+  </footer>
+
+  <script>
+    function showCountry(id) {
+      document.getElementById('countries-view').classList.remove('active');
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById('section-' + id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function showCountries() {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById('countries-view').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    function openModal(id) {
+      document.getElementById(id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.close-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          this.closest('.modal').classList.remove('active');
+          document.body.style.overflow = 'auto';
+        });
+      });
+      document.querySelectorAll('.modal').forEach(m => {
+        m.addEventListener('click', function(e) {
+          if (e.target === this) { this.classList.remove('active'); document.body.style.overflow = 'auto'; }
+        });
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          document.querySelectorAll('.modal').forEach(m => m.classList.remove('active'));
+          document.body.style.overflow = 'auto';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
